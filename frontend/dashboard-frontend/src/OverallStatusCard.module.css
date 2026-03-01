@@ -1,0 +1,82 @@
+.card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px 22px 20px;
+  box-shadow: 0 2px 14px rgba(30, 40, 90, 0.07);
+  transition: box-shadow 0.25s, transform 0.25s;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.card:hover {
+  box-shadow: 0 6px 24px rgba(30, 40, 90, 0.11);
+  transform: translateY(-2px);
+}
+.title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1a1d2e;
+  align-self: flex-end;
+  margin-bottom: 14px;
+}
+.donutWrap {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  align-self: center;
+  margin: 4px 0 18px;
+}
+.svg {
+  width: 140px;
+  height: 140px;
+  transform: rotate(-90deg);
+}
+.center {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.centerNum {
+  font-size: 32px;
+  font-weight: 800;
+  color: #1a1d2e;
+  line-height: 1;
+}
+.centerLabel {
+  font-size: 11px;
+  color: #9ba3b8;
+  margin-top: 3px;
+}
+
+/* ── Stats row ── */
+.stats {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-self: center;
+}
+.stat {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 20px;
+}
+.statGreen  { background: #f0faf4; color: #27ae60; }
+.statYellow { background: #fffbf0; color: #e6a817; }
+.statRed    { background: #fff4f3; color: #e53935; }
+.dot {
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.dotGreen  { background: #27ae60; }
+.dotYellow { background: #ffb300; }
+.dotRed    { background: #ef5350; }
